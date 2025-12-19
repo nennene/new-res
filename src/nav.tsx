@@ -1,13 +1,12 @@
-function nav() {
+import { Link } from "react-router-dom";
+
+export default function Nav() {
   return (
-    <nav className="navigation">
-        <ul className="flex space-x-4 bg-yellow-200 w-full h-12 items-center justify-center ">       
-             <li><a href="#home" className="text-green-800">Home</a></li>
-            <li><a href="#about" className="text-green-800">About</a></li>
-            <li><a href="#services" className="text-green-800">Services</a></li>
-            <li><a href="#contact" className="text-green-800">Contact</a></li>
-        </ul>
+    <nav className="flex bg-gray-800 p-4 justify-around text-white">
+      <Link to="/" className="hover:text-yellow-400 font-medium">Home</Link>
+      <Link to="/about" className="hover:text-yellow-400 font-medium">About</Link>
+      <Link to="/menu" className="hover:text-yellow-400 font-medium">Menu</Link>
+      <Link to="/contact" className="hover:text-yellow-400 font-medium">Contact</Link>
     </nav>
   );
 }
-export default nav;

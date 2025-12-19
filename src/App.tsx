@@ -1,23 +1,34 @@
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-import './App.css'
-import card from './card.tsx'
-import hero from './hero.tsx'
-import nav from './nav.tsx'
-import footer from './footer.tsx';
+import Hero from "./hero.tsx";
+import Nav from "./nav.tsx";
+import Footer from "./footer.tsx";
+import Contact from "./contact.tsx";
+import About from "./about.tsx";
+import Menu from "./menu.tsx";
+
+
 function App() {
-
-  const heroSection = hero();
-  const navSection = nav();
-  const footerSection = footer();
-  const cardSection = card();
   return (
-    <div className="App">
-      {navSection}
-      {heroSection}
-      {cardSection}
-       {footerSection}
+    <div className="App bg-gray-700 min-h-screen">
+         
+      <Nav />
+
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+
+      <Footer />
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
