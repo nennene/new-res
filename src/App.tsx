@@ -11,7 +11,7 @@ import Menu from "./menu.tsx";
 
 function App() {
   return (
-    <div className="App bg-gray-700 min-h-screen">
+    <div className="App bg-gray-800 scroll-smooth w-full h-full">
          
       <Nav />
 

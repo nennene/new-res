@@ -1,6 +1,6 @@
 function footer() {
     return (
-        <footer className="footer bg-gray-800 text-white text-center w-full p-5 mt-10"> 
+        <footer className="footer bg-gray-900 text-white text-center w-full p-5 mt-10"> 
         <p className="mb-2">Follow us on social media:</p>
         <div className="flex justify-center space-x-4 mb-4">
             <a href="#" className="hover:text-blue-500">Facebook</a>

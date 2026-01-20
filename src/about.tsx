@@ -2,7 +2,7 @@ import pic from './assets/ill.jpg';
 function about () {
     return (
         <div>
-        <section className="about-section bg-green-100 p-10 text-center">
+        <section className="about-section bg-pink-200 p-10 text-center">
             <h1 className="text-black text-lg font-bold">About Us</h1>
             <p className="p-10">Learn more about our mission, values, and the team dedicated to providing you with the best experience possible.</p>
             <img src={pic} className='w-100'alt="" />
